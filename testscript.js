@@ -1,4 +1,12 @@
 
+var mutationRecords = document.getElementById("lever-jobs-container");
+
+var observer = new MutationObserver(function (mutationRecords) {
+    console.log("change detected");
+});
+
+
+/*
 
 setTimeout(function(){
 	
@@ -79,4 +87,5 @@ document.addEventListener('click', function(evt) {
 	
 },200);
 
+*/
 
