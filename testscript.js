@@ -1,6 +1,18 @@
 console.log('test script loaded');
 
-setTimeout(function(){
+
+if( document.readyState !== 'loading' ) {
+    console.log( 'document is already ready, just execute code here' );
+    myInitCode();
+} else {
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log( 'document was not ready, place code here' );
+        myInitCode();
+    });
+}
+
+function myInitCode() {
+
 var teamTitles = document.querySelectorAll(".lever-team > li"); 
 var leverTeamTitles = document.querySelectorAll(".lever-team-title"); 
 for(var i = 0 ; i < teamTitles.length; i++){
@@ -73,4 +85,8 @@ document.addEventListener('click', function(evt) {
         }
 	}
 }, false);
-}, 1000);
+
+
+
+}
+
