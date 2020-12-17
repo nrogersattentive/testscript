@@ -3,14 +3,13 @@ var leverJobsContainer = document.getElementById("lever-jobs-container");
 
 var observer = new MutationObserver(function (mutationRecords) {
     console.log("change detected");
+    runTestScript();
 });
 
 observer.observe(leverJobsContainer, {childList: true});
 
 
-/*
-
-setTimeout(function(){
+function runTestScript(){
 	
 console.log('test script loaded');
 
@@ -87,7 +86,4 @@ document.addEventListener('click', function(evt) {
 	}
 }, false);
 	
-},200);
-
-*/
-
+}
