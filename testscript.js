@@ -1,12 +1,8 @@
+
+
+setTimeout(function(){
+	
 console.log('test script loaded');
-
-
-function executeAsync(func) {
-    setTimeout(func, 0);
-}
-
-
-function myInitCode() {
 
 var teamTitles = document.querySelectorAll(".lever-team > li"); 
 var leverTeamTitles = document.querySelectorAll(".lever-team-title"); 
@@ -80,8 +76,7 @@ document.addEventListener('click', function(evt) {
         }
 	}
 }, false);
-
-
+	
 }
 
-executeAsync(myInitCode());
+
