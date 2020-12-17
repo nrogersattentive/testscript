@@ -77,6 +77,6 @@ document.addEventListener('click', function(evt) {
 	}
 }, false);
 	
-});
+}, 0);
 
 
