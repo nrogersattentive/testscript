@@ -1,15 +1,12 @@
 console.log('test script loaded');
 
 
-if( document.readyState !== 'loading' ) {
-    console.log( 'document is already ready, just execute code here' );
-    myInitCode();
-} else {
-    document.addEventListener('DOMContentLoaded', function () {
-        console.log( 'document was not ready, place code here' );
-        myInitCode();
-    });
+function executeAsync(func) {
+    setTimeout(func, 0);
 }
+
+executeAsync(myInitCode);
+
 
 function myInitCode() {
 
