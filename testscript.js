@@ -1,5 +1,6 @@
 console.log('test script loaded');
 
+setTimeout(function(){
 var teamTitles = document.querySelectorAll(".lever-team > li"); 
 var leverTeamTitles = document.querySelectorAll(".lever-team-title"); 
 for(var i = 0 ; i < teamTitles.length; i++){
@@ -72,3 +73,4 @@ document.addEventListener('click', function(evt) {
         }
 	}
 }, false);
+}, 1000);
