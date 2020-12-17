@@ -1,9 +1,11 @@
 
-var mutationRecords = document.getElementById("lever-jobs-container");
+var leverJobsContainer = document.getElementById("lever-jobs-container");
 
 var observer = new MutationObserver(function (mutationRecords) {
     console.log("change detected");
 });
+
+observer.observe(leverJobsContainer, {childList: true});
 
 
 /*
