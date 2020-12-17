@@ -5,8 +5,6 @@ function executeAsync(func) {
     setTimeout(func, 0);
 }
 
-executeAsync(myInitCode);
-
 
 function myInitCode() {
 
@@ -84,6 +82,6 @@ document.addEventListener('click', function(evt) {
 }, false);
 
 
-
 }
 
+executeAsync(myInitCode());
