@@ -49,7 +49,7 @@ document.addEventListener('click', function(evt) {
             console.log(marTop);
         }
 
-        if(totalHeight < 240) {
+        if(totalHeight < 200) {
             dropDown.classList.add("animation-fast");
         }else if(totalHeight < 667) {
             dropDown.classList.add("animation-med");
