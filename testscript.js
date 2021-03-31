@@ -3,9 +3,10 @@ var accordionIds = ["a1","a2","a3","a4","a5","a6","a7","a8","a9","a10","a11"];
 var panelIds = ["p1","p2","p3","p4","p5","p6","p7","p8","p9","p10","p11"];
 
 var leverJobsContainer = document.getElementById("lever-jobs-container");
-var dropDownArray = document.querySelectorAll('.lever-team ul');
+var dropDownArray;
 
 var observer = new MutationObserver(function (mutationRecords) {
+    dropDownArray = document.querySelectorAll('.lever-team ul');
     runTestScript();
 });
 
